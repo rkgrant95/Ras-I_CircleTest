@@ -57,7 +57,7 @@ public class PlayerUtility
     /// </summary>
     private void GetInput()
     {
-        inputVector = new Vector2(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"));
+        inputVector = new Vector2(Input.GetAxis(Statics.Horizontal), Input.GetAxis(Statics.Vertical));
         movementVector = new Vector3(inputVector.x * moveSpeed * Time.deltaTime, 0, inputVector.y * moveSpeed * Time.deltaTime);
     }
 
